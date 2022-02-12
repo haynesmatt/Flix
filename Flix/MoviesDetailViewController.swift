@@ -8,11 +8,14 @@
 import UIKit
 
 class MoviesDetailViewController: UIViewController {
+    
+    var movie: [String:Any]!
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+        print(movie["title"])
     }
     
 
