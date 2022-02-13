@@ -146,7 +146,7 @@
                         <viewLayoutGuide key="safeArea" id="iV4-8K-sxy"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
-                    <navigationItem key="navigationItem" title="Hottest Picks" id="wjk-cE-Cl5"/>
+                    <navigationItem key="navigationItem" title="Superhero Movies" id="wjk-cE-Cl5"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dAp-j6-PvH" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -190,11 +190,11 @@
             </objects>
             <point key="canvasLocation" x="1763.7681159420292" y="72.991071428571431"/>
         </scene>
-        <!--Trending-->
+        <!--Superhero Movies-->
         <scene sceneID="NxN-dt-mnS">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="OZt-76-MQC" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Trending" image="now_playing_tabbar_item" id="60j-rE-0e2"/>
+                    <tabBarItem key="tabBarItem" title="Superhero Movies" image="superhero_tabbar_item" id="60j-rE-0e2"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="o9g-HQ-nds">
                         <rect key="frame" x="0.0" y="44" width="414" height="44"/>
@@ -214,8 +214,8 @@
         <segue reference="ARj-e3-cgu"/>
     </inferredMetricsTieBreakers>
     <resources>
-        <image name="now_playing_tabbar_item" width="21" height="21"/>
         <image name="projector_tabbar_item" width="21" height="25"/>
+        <image name="superhero_tabbar_item" width="21" height="23"/>
         <namedColor name="AccentColor">
             <color red="0.0" green="0.46000000000000002" blue="0.89000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
