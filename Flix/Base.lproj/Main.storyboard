@@ -99,17 +99,17 @@
             <objects>
                 <viewController title="MoviesDetailViewController" id="gUB-Z6-Jyc" customClass="MoviesDetailViewController" customModule="Flix" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="p6u-KL-B8R">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="geF-Td-d8a">
-                                <rect key="frame" x="0.0" y="0.0" width="414" height="275"/>
+                                <rect key="frame" x="0.0" y="88" width="414" height="275"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="275" id="6dW-Pk-NXH"/>
                                 </constraints>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sMR-6P-vIG">
-                                <rect key="frame" x="157" y="285" width="247" height="80"/>
+                                <rect key="frame" x="157" y="373" width="247" height="80"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="80" id="7Nq-Yf-uL4"/>
                                 </constraints>
@@ -118,7 +118,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="GMK-P6-HQL">
-                                <rect key="frame" x="20" y="179" width="127" height="189"/>
+                                <rect key="frame" x="20" y="267" width="127" height="189"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="127" id="50f-hT-EHT"/>
                                     <constraint firstAttribute="height" constant="189" id="XPe-8S-AgJ"/>
@@ -212,6 +212,7 @@
                                         <size key="customSize" width="200" height="313"/>
                                         <connections>
                                             <outlet property="posterView" destination="1ej-dM-P2W" id="Thl-1N-Ko1"/>
+                                            <segue destination="8A2-G1-Ndt" kind="show" id="9PM-c5-riM"/>
                                         </connections>
                                     </collectionViewCell>
                                 </cells>
@@ -234,6 +235,22 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dAp-j6-PvH" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="947.82608695652186" y="746.65178571428567"/>
+        </scene>
+        <!--MoviesDetailViewController_1-->
+        <scene sceneID="BwL-62-0VB">
+            <objects>
+                <viewController title="MoviesDetailViewController_1" id="8A2-G1-Ndt" customClass="MoviesDetailViewController_1" customModule="Flix" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="A0o-IX-aSx">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="gSR-5Y-4BQ"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="LGc-pd-LQk"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="4D4-AU-ebW" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2674" y="747"/>
         </scene>
         <!--Home-->
         <scene sceneID="LYR-JK-cY7">
@@ -292,9 +309,28 @@
             </objects>
             <point key="canvasLocation" x="37.681159420289859" y="746.65178571428567"/>
         </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="Xvt-Hg-HQL">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="78V-DD-9Cb" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="ndQ-GF-euc">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="8A2-G1-Ndt" kind="relationship" relationship="rootViewController" id="JWk-hS-syB"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="w6Q-15-RYA" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1764" y="747"/>
+        </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="ARj-e3-cgu"/>
+        <segue reference="9PM-c5-riM"/>
+        <segue reference="5JJ-dR-UyE"/>
     </inferredMetricsTieBreakers>
     <resources>
         <image name="projector_tabbar_item" width="21" height="25"/>
